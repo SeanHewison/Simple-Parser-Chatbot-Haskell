@@ -74,9 +74,9 @@ main = do
         ]
       , testGroup "Part One" [
           testCase "Exercise 2: What day is it?" $
-            checkExercise o2 ["Today is [MTWFS][a-z]+\\."]
+            checkExercise o2 ["Today is [MTWFS][a-z]+ the [0-9]+[a-z]+ of [JFMASOND][a-z]+\\."]
         , testCase "Exercise 3: What day is it tomorrow?" $
-            checkExercise o3 ["Tomorrow is [MTWFS][a-z]+\\."]
+            checkExercise o3 ["Tomorrow is [MTWFS][a-z]+ the [0-9]+[a-z]+ of [JFMASOND][a-z]+\\."]
         , testCase "Exercise 4: How long ago was 2026-02-14?" $
             checkExercise o4 ["2026-02-14 was [0-9]+ days ago\\."]
         ]

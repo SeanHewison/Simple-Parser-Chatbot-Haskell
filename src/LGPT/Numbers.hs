@@ -18,7 +18,7 @@ printLonghand n
   | n == 1000000  = "one million"
   | n == 0        = "zero"
   | n >= 1000     = let
-      thouStr   = printLonghand (n `div` 1000) ++ " thousand" 
+      thouStr   = printLonghand (n `div` 1000) ++ " thousand"
       and       = if n `mod` 1000 >= 100 then " " else " and "
       hundStr   = printLonghand (n `mod` 1000)
       in if n `mod` 1000 == 0
